@@ -10,4 +10,6 @@ Prepare Data. You can obtain the well-preprocessed datasets from **TSLib** [[Lin
 
 # Train 
 
-`python run.py`
+```bash
+python run.py
+```
