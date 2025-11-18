@@ -29,7 +29,7 @@ parser.add_argument('--model', type=str, required=False, default='HDTCNet',
 
 # data loader
 parser.add_argument('--data', type=str, required=False, default='UEA', help='dataset type')
-parser.add_argument('--root_path', type=str, default='../../data/Handwriting/', help='root path of the data file')
+parser.add_argument('--root_path', type=str, default='../data/', help='root path of the data file')
 
 parser.add_argument('--data_path', type=str, default='ETTh1.csv', help='data file')
 parser.add_argument('--features', type=str, default='M',
@@ -136,3 +136,4 @@ if __name__ == '__main__':
         print('>>>>>>>testing : {}<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<'.format(setting))
         exp.test(setting, test=1)
         torch.cuda.empty_cache()
+
